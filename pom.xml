@@ -31,7 +31,4 @@
         <start-class>pl.udemy.petclinic.PetClinicApplication</start-class>
     </properties>
 
-    <dependencies>
-    </dependencies>
-
 </project>

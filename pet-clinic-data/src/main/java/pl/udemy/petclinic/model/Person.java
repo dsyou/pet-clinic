@@ -1,7 +1,7 @@
 package pl.udemy.petclinic.model;
 
 /**
- * @author Dawid
+ * @author Dawid Janik
  * @since 01.12.2018
  */
 public class Person {
