@@ -1,10 +1,12 @@
-package pl.udemy.petclinic.model;
+package pl.udemy.petclinic.core.model.person.jpa;
+
+import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
 
 /**
  * @author Dawid Janik
  * @since 01.12.2018
  */
-public class Person {
+public class Person extends BaseIdEntity {
 
     private String firstName;
     private String lastName;

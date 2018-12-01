@@ -1,6 +1,6 @@
-package pl.udemy.petclinic.services;
+package pl.udemy.petclinic.pet;
 
-import pl.udemy.petclinic.model.Pet;
+import pl.udemy.petclinic.pet.model.jpa.Pet;
 
 import java.util.Set;
 
