@@ -1,5 +1,6 @@
 package pl.udemy.petclinic.vet;
 
+import pl.udemy.petclinic.core.CrudService;
 import pl.udemy.petclinic.vet.model.jpa.Vet;
 
 import java.util.Set;
@@ -8,11 +9,6 @@ import java.util.Set;
  * @author Dawid Janik
  * @since 01.12.2018
  */
-public interface VetServce {
+public interface VetServce extends CrudService<Vet, Long> {
 
-    Vet findById(Long id);
-
-    Vet save(Vet vet);
-
-    Set<Vet> findAll();
 }
