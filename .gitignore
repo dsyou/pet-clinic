@@ -15,9 +15,10 @@
 
 # Generated files
 .idea/**/contentModel.xml
-.idea/*/compiler.xml
-.idea/*/encodings.xml
-.idea/*/vcs.xml
+\.idea/compiler\.xml
+\.idea/encodings\.xml
+\.idea/vcs\.xml
+
 
 
 # Sensitive or high-churn files
@@ -179,4 +180,4 @@ gradle-app.setting
 # SonarLint working directories, configuration files (including credentials)
 .sonarlint/
 
-# End of https://www.gitignore.io/api/macos,maven,gradle,windows,intellij+iml
+# End of git ignore.
