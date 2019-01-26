@@ -2,7 +2,6 @@ package pl.udemy.petclinic.pet;
 
 import org.springframework.stereotype.Service;
 import pl.udemy.petclinic.core.AbstractMapService;
-import pl.udemy.petclinic.core.CrudService;
 import pl.udemy.petclinic.pet.model.jpa.Pet;
 
 import java.util.Set;
@@ -22,7 +21,7 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
 
     @Override
     public Pet create(Pet pet) {
-        return super.create(pet.getId(), pet);
+        return super.create(pet);
     }
 
     @Override

@@ -21,7 +21,7 @@ public class VerServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet create(Vet vet) {
-        return super.create(vet.getId(), vet);
+        return super.create(vet);
     }
 
     @Override

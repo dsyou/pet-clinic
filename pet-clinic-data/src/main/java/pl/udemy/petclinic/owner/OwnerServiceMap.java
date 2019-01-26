@@ -2,7 +2,6 @@ package pl.udemy.petclinic.owner;
 
 import org.springframework.stereotype.Service;
 import pl.udemy.petclinic.core.AbstractMapService;
-import pl.udemy.petclinic.core.CrudService;
 import pl.udemy.petclinic.owner.model.jpa.Owner;
 
 import java.util.Set;
@@ -22,7 +21,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner create(Owner owner) {
-        return super.create(owner.getId(), owner);
+        return super.create(owner);
     }
 
     @Override
