@@ -8,4 +8,5 @@ import pl.udemy.petclinic.core.model.person.jpa.Person;
  */
 public class Owner extends Person {
 
+
 }

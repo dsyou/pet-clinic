@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 01.12.2019
  */
 @Controller
+@SuppressWarnings("unused")
 public class IndexController {
 
     @RequestMapping({
