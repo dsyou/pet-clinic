@@ -1,7 +1,7 @@
 package pl.udemy.petclinic.vet.model.jpa;
 
 import pl.udemy.petclinic.core.model.jpa.person.Person;
-import pl.udemy.petclinic.speciality.Speciality;
+import pl.udemy.petclinic.speciality.model.jpa.Speciality;
 
 import java.util.HashSet;
 import java.util.Set;

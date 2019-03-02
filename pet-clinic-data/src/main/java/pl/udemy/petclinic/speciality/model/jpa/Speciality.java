@@ -1,10 +1,12 @@
-package pl.udemy.petclinic.speciality;
+package pl.udemy.petclinic.speciality.model.jpa;
+
+import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
 
 /**
  * @author Dawid Janik
  * @since 02.03.2019
  */
-public class Speciality {
+public class Speciality extends BaseIdEntity {
 
     private String description;
 
