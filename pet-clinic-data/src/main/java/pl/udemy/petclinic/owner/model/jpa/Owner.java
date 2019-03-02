@@ -3,6 +3,7 @@ package pl.udemy.petclinic.owner.model.jpa;
 import pl.udemy.petclinic.core.model.jpa.person.Person;
 import pl.udemy.petclinic.pet.model.jpa.Pet;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -15,7 +16,7 @@ public class Owner extends Person {
     private String address;
     private String telephone;
 
-    private Set<Pet> pets;
+    private Set<Pet> pets = new HashSet<>();
 
     public String getCity() {
         return city;
