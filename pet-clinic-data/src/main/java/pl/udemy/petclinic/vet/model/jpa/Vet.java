@@ -1,6 +1,9 @@
 package pl.udemy.petclinic.vet.model.jpa;
 
-import pl.udemy.petclinic.core.model.person.jpa.Person;
+import pl.udemy.petclinic.core.model.jpa.person.Person;
+import pl.udemy.petclinic.speciality.Speciality;
+
+import java.util.Set;
 
 /**
  * @author Dawid Janik
@@ -8,5 +11,13 @@ import pl.udemy.petclinic.core.model.person.jpa.Person;
  */
 public class Vet extends Person {
 
+    private Set<Speciality> specialities;
 
+    public Set<Speciality> getSpecialities() {
+        return specialities;
+    }
+
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
+    }
 }

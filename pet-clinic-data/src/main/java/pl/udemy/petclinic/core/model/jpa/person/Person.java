@@ -1,4 +1,4 @@
-package pl.udemy.petclinic.core.model.person.jpa;
+package pl.udemy.petclinic.core.model.jpa.person;
 
 import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
 

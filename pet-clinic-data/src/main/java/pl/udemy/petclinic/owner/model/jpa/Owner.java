@@ -1,6 +1,6 @@
 package pl.udemy.petclinic.owner.model.jpa;
 
-import pl.udemy.petclinic.core.model.person.jpa.Person;
+import pl.udemy.petclinic.core.model.jpa.person.Person;
 import pl.udemy.petclinic.pet.model.jpa.Pet;
 
 import java.util.Set;
