@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pl.udemy.petclinic.vet.VetService;
 
 @Controller
-@RequestMapping("vets")
 @SuppressWarnings("unused")
 public class VetController {
 
@@ -16,7 +15,7 @@ public class VetController {
         this.vetService = vetService;
     }
 
-    @RequestMapping({"", "/index", "/index.html"})
+    @RequestMapping({"vets", "/vets/index", "/vets/index.html", "/vets.html"})
     public String listsVets(Model model) {
         model.addAttribute("vets", vetService.getAll());
         return "vets/index";
