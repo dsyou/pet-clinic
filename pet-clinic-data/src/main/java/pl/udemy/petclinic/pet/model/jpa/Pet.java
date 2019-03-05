@@ -1,6 +1,6 @@
 package pl.udemy.petclinic.pet.model.jpa;
 
-import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
+import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 import pl.udemy.petclinic.owner.model.jpa.Owner;
 
 import java.time.LocalDate;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
  * @author Dawid Janik
  * @since 01.12.2018
  */
-public class Pet extends BaseIdEntity {
+public class Pet extends BaseEntity {
 
     private String name;
     private PetType petType;

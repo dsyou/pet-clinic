@@ -1,12 +1,12 @@
 package pl.udemy.petclinic.pet.model.jpa;
 
-import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
+import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 
 /**
  * @author Dawid Janik
  * @since 01.12.2018
  */
-public class PetType extends BaseIdEntity {
+public class PetType extends BaseEntity {
 
     private String name;
 

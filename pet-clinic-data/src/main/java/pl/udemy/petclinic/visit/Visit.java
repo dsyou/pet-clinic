@@ -1,6 +1,6 @@
 package pl.udemy.petclinic.visit;
 
-import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
+import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 import pl.udemy.petclinic.pet.model.jpa.Pet;
 
 import java.time.LocalDate;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
  * @author Dawid Janik
  * @since 27.02.2019
  */
-public class Visit extends BaseIdEntity {
+public class Visit extends BaseEntity {
 
     private LocalDate date;
     private String description;

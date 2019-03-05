@@ -1,10 +1,10 @@
 package pl.udemy.petclinic.core;
 
-import pl.udemy.petclinic.core.model.jpa.BaseIdEntity;
+import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 
 import java.util.*;
 
-public abstract class AbstractMapService<T extends BaseIdEntity, ID extends Long> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
     protected Map<Long, T> map = new HashMap<>();
 
