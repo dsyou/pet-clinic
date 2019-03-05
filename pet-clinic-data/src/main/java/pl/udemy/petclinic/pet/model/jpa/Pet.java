@@ -3,17 +3,29 @@ package pl.udemy.petclinic.pet.model.jpa;
 import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 import pl.udemy.petclinic.owner.model.jpa.Owner;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
  * @author Dawid Janik
  * @since 01.12.2018
  */
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity {
 
+    @Column(name = "name")
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     private PetType petType;
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private Owner owner;
+
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     public String getName() {
