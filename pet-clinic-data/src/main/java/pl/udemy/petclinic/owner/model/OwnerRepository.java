@@ -8,4 +8,6 @@ import pl.udemy.petclinic.owner.model.jpa.Owner;
  * @since 05.03.2019
  */
 public interface OwnerRepository extends CrudRepository<Owner, Long> {
+
+    Owner findByLastName(String lastName);
 }
