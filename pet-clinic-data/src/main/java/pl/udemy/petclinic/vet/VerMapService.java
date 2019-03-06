@@ -9,11 +9,11 @@ import pl.udemy.petclinic.vet.model.jpa.Vet;
 import java.util.Set;
 
 @Service
-public class VerServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VerMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
 
-    public VerServiceMap(SpecialityService specialityService) {
+    public VerMapService(SpecialityService specialityService) {
         this.specialityService = specialityService;
     }
 
