@@ -48,5 +48,5 @@ public class VetJpaService implements VetService {
     public void deleteById(Long id) {
         vetRepository.deleteById(id);
     }
-    
+
 }
