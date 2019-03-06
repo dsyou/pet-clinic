@@ -1,5 +1,7 @@
 package pl.udemy.petclinic.pet;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 import pl.udemy.petclinic.pet.model.PetTypeRepository;
 import pl.udemy.petclinic.pet.model.jpa.PetType;
 
@@ -10,6 +12,8 @@ import java.util.Set;
  * @author Dawid Janik
  * @since 06.03.2019
  */
+@Service
+@Profile("springadatajpa")
 public class PetTypeJpaService implements PetTypeService {
 
     private final PetTypeRepository petTypeRepository;
