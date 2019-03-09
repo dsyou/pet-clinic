@@ -1,5 +1,9 @@
 package pl.udemy.petclinic.visit.model.jpa;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import pl.udemy.petclinic.core.model.jpa.BaseEntity;
 import pl.udemy.petclinic.pet.model.jpa.Pet;
 
@@ -10,6 +14,10 @@ import java.time.LocalDate;
  * @author Dawid Janik
  * @since 27.02.2019
  */
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "visits")
 public class Visit extends BaseEntity {
@@ -24,27 +32,4 @@ public class Visit extends BaseEntity {
     @JoinColumn(name = "pet_id")
     private Pet pet;
 
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Pet getPet() {
-        return pet;
-    }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-    }
 }

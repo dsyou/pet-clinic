@@ -1,5 +1,9 @@
 package pl.udemy.petclinic.vet.model.jpa;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import pl.udemy.petclinic.core.model.jpa.person.Person;
 import pl.udemy.petclinic.speciality.model.jpa.Speciality;
 
@@ -11,6 +15,10 @@ import java.util.Set;
  * @author Dawid Janik
  * @since 01.12.2018
  */
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "vets")
 public class Vet extends Person {
@@ -20,11 +28,4 @@ public class Vet extends Person {
             inverseJoinColumns = @JoinColumn(name = "speciality_id"))
     private Set<Speciality> specialities = new HashSet<>();
 
-    public Set<Speciality> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<Speciality> specialities) {
-        this.specialities = specialities;
-    }
 }
