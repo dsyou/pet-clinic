@@ -15,17 +15,13 @@ import java.util.Set;
  * @since 05.03.2019
  */
 @Service
-@Profile("springadatajpa")
+@Profile("springdatajpa")
 public class OwnerJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
-    private final PetService petService;
-    private final PetTypeService petTypeService;
 
-    public OwnerJpaService(OwnerRepository ownerRepository, PetService petService, PetTypeService petTypeService) {
+    public OwnerJpaService(OwnerRepository ownerRepository) {
         this.ownerRepository = ownerRepository;
-        this.petService = petService;
-        this.petTypeService = petTypeService;
     }
 
     @Override
