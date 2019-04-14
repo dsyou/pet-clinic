@@ -19,9 +19,13 @@ import java.util.Set;
 public class OwnerJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
+    private final PetService petService;
+    private final PetTypeService petTypeService;
 
-    public OwnerJpaService(OwnerRepository ownerRepository) {
+    public OwnerJpaService(OwnerRepository ownerRepository, PetService petService, PetTypeService petTypeService) {
         this.ownerRepository = ownerRepository;
+        this.petService = petService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
